@@ -66,8 +66,10 @@ public class SpringDataVeiculosApplication implements CommandLineRunner {
 		/** 2 - LISTAR OS VEÍCULOS DA MARCA CHEVROLET */
 
 		/** 3 - LISTAR OS VEÍCULOS DA MARCA FIAT POSTERIORES A 2009 */
+		
+		/** 4 - LISTAR TODAS AS MARCAS QUE INICIAM COM A LETRA F */
 
-		/** 4 - LISTAR TODAS AS MARCAS COM OS SEUS VEÍCULOS */
+		/** 5 - LISTAR TODAS AS MARCAS COM OS SEUS VEÍCULOS */
 
 		
 	}
