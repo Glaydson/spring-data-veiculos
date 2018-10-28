@@ -1,9 +1,7 @@
 package br.edu.unichristus;
 
 import java.text.ParseException;
-import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,11 +16,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringDataVeiculosApplication implements CommandLineRunner {
 
 	/**
-	 * ATIVIDADE PRÁTICA - SPRING DATA
+	 * ATIVIDADE PRÁTICA - SPRING DATA E SPRING MVC
 	 * 
 	 * NESTA ATIVIDADE CONSTRUÍREMOS UMA APLICAÇÃO SIMPLES ENVOLVENDO VEÍCULOS E
 	 * SUAS MARCAS. SÃO DADAS: - CLASSE Veiculo - ENTIDADE QUE REPRESENTA UM VEÍCULO
-	 * - INTERFACE VeiculoRepository - REPOSITÓRIO PARA VEÍCULOS - CLASSE Aplicacao
+	 * - INTERFACE VeiculoRepository - REPOSITÓRIO PARA VEÍCULOS - CLASSE VeiculoService - 
+	 * CLASSE DE SERVIÇO PARA VEÍCULOS - CLASSE VeiculosController - CONTROLADOR 
+	 * PARA VEÍCULOS - CLASSE Aplicacao
 	 * (ESTA CLASSE) - CLASSE PARA RODAR A APLICAÇÃO - SCRIPT data.sql - SCRIPT PARA
 	 * CARREGAR DADOS NAS TABELAS DE VEÍCULOS E MARCAS
 	 * 
@@ -45,9 +45,11 @@ public class SpringDataVeiculosApplication implements CommandLineRunner {
 	 * 
 	 * - CRIAR A INTERFACE MarcaRepository e a classe de serviço MarcaService
 	 * 
+	 * - CRIAR A CLASSE MarcasController (RestController) com o mapeamento "/marcas"
+	 * 
 	 * - RODAR A CLASSE DE EXECUÇÃO E VERIFICAR A CRIAÇÃO DAS TABELAS
 	 * 
-	 * - IMPLEMENTE, NAS CLASSES DE REPOSITÓRIO E SERVIÇO, OS MÉTODOS NECESSÁRIOS
+	 * - IMPLEMENTE, NAS CLASSES DE REPOSITÓRIO, SERVIÇO E CONTROLLER, OS MÉTODOS NECESSÁRIOS
 	 * PARA EXECUTAR OS EXERCÍCIOS SOLICITADOS NO MÉTODO MAIN
 	 * 
 	 * - AO FINAL, COMPACTAR A PASTA DO PROJETO E ENVIAR ATRAVÉS DA TAREFA ABERTA NO
@@ -55,11 +57,10 @@ public class SpringDataVeiculosApplication implements CommandLineRunner {
 	 * 
 	 */
 
-	@Autowired
-	private VeiculoService servicoVeiculos;
-
 	@Override
 	public void run(String... args) throws ParseException {
+		
+		// AS FUNCIONALIDADES ABAIXO DEVEM SER TESTADAS USANDO-SE O POSTMAN
 
 		/** 1 - INSERIR UM NOVO VEÍCULO PARA A MARCA CITROEN */
 
