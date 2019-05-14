@@ -10,7 +10,7 @@ public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
 	
 	public Optional<Veiculo> findByPlacas(String placas);
 	
-	/** ESTA CLASSE DEVER� CONTER MAIS DOIS METODOS:
+	/** ESTA CLASSE DEVERA CONTER MAIS DOIS METODOS:
 	 * 
 	 *  1 - METODO PARA OBTER OS VEICULOS DE UMA DETERMINADA MARCA
 	 *  

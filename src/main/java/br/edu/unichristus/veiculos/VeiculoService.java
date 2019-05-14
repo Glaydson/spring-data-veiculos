@@ -28,7 +28,7 @@ public class VeiculoService {
 	}
 
 	public Veiculo buscarPeloID(Long id) {
-		return this.repoVeiculos.findOne(id);
+		return this.repoVeiculos.findById(id).get();
 	}
 
 }

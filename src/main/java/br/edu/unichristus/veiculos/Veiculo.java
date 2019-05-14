@@ -5,9 +5,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
 import lombok.Data;
+import marca.Marca;
 
 @Entity
 @Table(name = "TB_VEICULOS")
@@ -23,6 +29,11 @@ public class Veiculo {
 
 	@Column(name = "PLACAS_VEICULO", nullable = false, length = 8, unique = true)
 	private String placas;
+	
+	@ManyToOne
+	@JoinColumn(name="MARCA_ID")
+	@JsonIgnoreProperties("veiculos")
+	private Marca marca;
 
 	public Veiculo() {
 
@@ -35,10 +46,11 @@ public class Veiculo {
 
 	@Override
 	public String toString() {
-		// SUBSTITUIR A LINHA ABAIXO PELA SUBSEQUENTE, APÓS INCLUIR A CLASSE MARCA
+		// Remover a linha abaixo e descomentar a seguinte após configurar a classe Marca
 		return "";
-//		return "Veiculo [veiculoID=" + veiculoID + ", ano=" + ano + ", placas=" + placas + ", marca=" + marca.getNome() + "]";
+		//return "Veiculo [veiculoID=" + veiculoID + ", ano=" + ano + ", placas=" + placas + ", marca=" + marca.getNome() + "]";
 	}
+
 
 	
 }
