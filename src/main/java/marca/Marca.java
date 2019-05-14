@@ -6,6 +6,11 @@ import br.edu.unichristus.veiculos.Veiculo;
 
 
 public class Marca {
+	
+	/*
+	 * ESTA CLASSE DEVERA SER CONFIGURADA COMO UMA ENTIDADE PERSISTENTE, TABELA TB_MARCAS
+	 * CONFIGURAR A CHAVE PRIMÁRIA E CAMPOS CONFORME ORIENTAÇÃO DO EXERCÍCIO
+	 */
 
 	private Long marcaID;
 	
