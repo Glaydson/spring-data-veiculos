@@ -1,4 +1,4 @@
-package marca;
+package br.edu.unichristus.marca;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -9,7 +9,7 @@ public interface MarcaRepository extends JpaRepository<Marca, Long> {
 	 * 
 	 * Buscar uma marca a partir do seu nome
 	 * 
-	 * Buscar uma marca iniciando por uma determinada letra
+	 * Buscar as marcas cujo nome inicia por uma determinada letra
 	 * 
 	 */
 

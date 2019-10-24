@@ -1,4 +1,4 @@
-package marca;
+package br.edu.unichristus.marca;
 
 import java.util.List;
 

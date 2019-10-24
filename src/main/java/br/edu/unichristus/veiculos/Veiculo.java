@@ -11,9 +11,8 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+import br.edu.unichristus.marca.Marca;
 import lombok.Data;
-import marca.Marca;
 
 @Entity
 @Table(name = "TB_VEICULOS")
@@ -46,7 +45,7 @@ public class Veiculo {
 
 	@Override
 	public String toString() {
-		// Remover a linha abaixo e descomentar a seguinte após configurar a classe Marca
+		// REMOVER A LINHA ABAIXO E DESCOMENTAR A LINHA SEGUINTE, APÓS CONFIGURAR A CLASSE MARCA
 		return "";
 		//return "Veiculo [veiculoID=" + veiculoID + ", ano=" + ano + ", placas=" + placas + ", marca=" + marca.getNome() + "]";
 	}

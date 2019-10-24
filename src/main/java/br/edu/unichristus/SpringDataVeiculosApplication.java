@@ -1,8 +1,5 @@
 package br.edu.unichristus;
 
-import java.text.ParseException;
-
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,24 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class SpringDataVeiculosApplication implements CommandLineRunner {
+public class SpringDataVeiculosApplication {
 
-	
-
-	@Override
-	public void run(String... args) throws ParseException {
-		
-		// AS FUNCIONALIDADES ABAIXO DEVEM SER TESTADAS USANDO-SE O POSTMAN
-
-		/** 1 - INSERIR UM NOVO VEÍCULO PARA A MARCA CITROEN */
-
-		/** 2 - LISTAR OS VEÍCULOS DA MARCA CHEVROLET */
-
-		/** 3 - LISTAR OS VEÍCULOS DA MARCA FIAT POSTERIORES A 2009 */
-		
-		/** 4 - LISTAR TODAS AS MARCAS QUE INICIAM COM A LETRA F */
-		
-	}
+	// AS FUNCIONALIDADES DEVEM SER TESTADAS USANDO-SE O POSTMAN
+    // ESTA CLASSE SERVE APENAS PARA SUBIR A APLICAÇÃO E NÃO DEVE SER MODIFICADA!!
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataVeiculosApplication.class, args);
